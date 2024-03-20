@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My portfolio</title>
   </head>
   <body>
@@ -19,10 +20,48 @@
         ></video>
       </section>
       <section class="hero-text-box">
-        <h1 class="hero-heading">Creativity Like a Gundam</h1>
-        <p class="hero-text">Vuela como todo un campeon</p>
+        <h1 class="hero-heading">Conviertete en un maestro Pokemon</h1>
+        <p class="hero-text">Capturalos a todos!</p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">Apretame</button>
+          </a>
+        </p>
       </section>
     </header>
     <!-- End Hero Header -->
+
+    <!-- Begin Portfolio -->
+    <section id="portfolio" class="portfolio container">
+      <h1>Portafolio</h1>
+      <section class="portfolio-gallery"></section>
+      <div class="gallery-item">
+        <a
+          href="img/emoticons-asustados-11.jpg"
+          class="glightbox"
+          data-glightbox="title: Flower; description: Esta re loco todooo "
+        >
+          <img
+            src="img/emoticons-asustados-11.jpg"
+            alt="emoticon asustado"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/red-circle.png" class="glightbox">
+          <img
+            src="img/red-circle.png"
+            alt="emoticon asustado"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
